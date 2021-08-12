@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #e66465, #9198e5);
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+}
+body .conteiner-formulario {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 1000px;
+  height: 1000px;
+}
+body .conteiner-formulario .titulo-formulario {
+  background-color: #2ca9e3;
+  text-align: center;
+}
+body .conteiner-formulario .formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+body .conteiner-formulario .formulario .input-formulario {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0px;
+}
+body .conteiner-formulario .formulario .input-formulario label {
+  font-size: 20px;
+}
+body .conteiner-formulario .formulario .input-formulario input {
+  width: 400px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #BBA9BB;
+  border: 1px solid gray;
+  padding: 2px;
+}
+body .conteiner-formulario .formulario .input-formulario .input-error {
+  border: 1px solid red;
+}
+body .conteiner-formulario .formulario .input-formulario .input-true {
+  border: 1px solid green;
+}
+body .conteiner-formulario .formulario .input-formulario textarea {
+  padding: 2px;
+  width: 400px;
+  height: 80px;
+  font-size: 20px;
+  background-color: #BBA9BB;
+}
+body .conteiner-formulario .formulario .input-formulario .error {
+  border: 1px solid red;
+}
+body .conteiner-formulario .formulario .botones-formulario button {
+  width: 190px;
+  height: 50px;
+  margin: 0px 10px 10px 10px;
+  border: 1px solid gray;
+  text-transform: uppercase;
+}
+body .conteiner-formulario .formulario .botones-formulario #enviar {
+  background-color: #6DC36D;
+}
+body .conteiner-formulario .formulario .botones-formulario .enviar-active {
+  cursor: pointer;
+}
+body .conteiner-formulario .formulario .botones-formulario #resetear {
+  background-color: #23BAC4;
+}
+body .conteiner-formulario .formulario .botones-formulario #resetear:hover {
+  cursor: pointer;
+}
+body .conteiner-formulario .formulario .errores-formulario {
+  display: none;
+}
+body .conteiner-formulario .formulario .errores-formulario-active {
+  display: block;
+  color: red;
+  border: 1px solid red;
+  padding: 10px;
+  margin: 10px 0px;
+}
+body .conteiner-formulario .formulario .enviar-email {
+  padding: 10px 5px;
+  margin-bottom: 10px;
+  color: green;
+  border: 1px solid green;
+}
+body .conteiner-formulario .formulario .spinner {
+  display: none;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #09f;
+  animation: spin 1s ease infinite;
+  margin: 5px 0px 20px 0px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 1100px) {
+  body .conteiner-formulario {
+    width: 800px;
+  }
+  body .conteiner-formulario .titulo-formulario {
+    font-size: 15px;
+  }
+}
+@media (max-width: 850px) {
+  body .conteiner-formulario {
+    width: 500px;
+  }
+  body .conteiner-formulario .titulo-formulario {
+    font-size: 13px;
+  }
+}
+@media (max-width: 550px) {
+  body .conteiner-formulario {
+    width: 350px;
+  }
+  body .conteiner-formulario .formulario .input-formulario {
+    padding: 20px 0px;
+  }
+  body .conteiner-formulario .formulario .input-formulario input {
+    width: 300px;
+  }
+  body .conteiner-formulario .formulario .input-formulario textarea {
+    width: 300px;
+  }
+  body .conteiner-formulario .formulario .botones-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  body .conteiner-formulario .formulario .botones-formulario button {
+    width: 85%;
+  }
+}/*# sourceMappingURL=style.css.map */

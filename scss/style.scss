@@ -1,0 +1,169 @@
+@import "color.scss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $color-body-gradient;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins';
+    .conteiner-formulario {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 1000px;
+        height: 1000px;
+        .titulo-formulario {
+            background-color: $color-titulo;
+            text-align: center;
+        }
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            .input-formulario {
+                display: flex;
+                flex-direction: column;
+                padding: 30px 0px;
+                label {
+                    font-size: 20px;
+                }
+                input {
+                    width: 400px;
+                    height: 40px;
+                    font-size: 20px;
+                    background-color: $color-input;
+                    border: 1px solid $color-border;
+                    padding: 2px;
+                }
+                .input-error {
+                    border: 1px solid $color-error-formulario;
+                }
+                .input-true {
+                    border: 1px solid $color-true-formulario;
+                }
+                textarea {
+                    padding: 2px;
+                    width: 400px;
+                    height: 80px;
+                    font-size: 20px;
+                    background-color: $color-input;
+                }
+                .error {
+                    border: 1px solid $color-error-formulario;
+                }
+            }
+            .botones-formulario {
+                button {
+                    width: 190px;
+                    height: 50px;
+                    margin: 0px 10px 10px 10px;
+                    border: 1px solid $color-border;
+                    text-transform: uppercase;
+                }
+                #enviar {
+                    background-color: $color-button-enviar;
+                }
+                .enviar-active {
+                    cursor: pointer;
+                }
+                #resetear {
+                    background-color: $color-button-reset;
+                }
+                #resetear:hover {
+                    cursor: pointer;
+                }
+            }
+            .errores-formulario {
+                display: none;
+            }
+            .errores-formulario-active {
+                display: block;
+                color: $color-error-formulario;
+                border: 1px solid $color-error-formulario;
+                padding: 10px;
+                margin: 10px 0px;
+            }
+            .enviar-email {
+                padding: 10px 5px;
+                margin-bottom: 10px;
+                color: $color-true-formulario;
+                border: 1px solid $color-true-formulario;
+            }
+            .spinner {
+                display: none;
+                border: 4px solid rgba(0, 0, 0, 0.1);
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                border-left-color: #09f;
+                animation: spin 1s ease infinite;
+                margin: 5px 0px 20px 0px;
+            }
+        }
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1100px) {
+    body {
+        .conteiner-formulario {
+            width: 800px;
+            .titulo-formulario {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    body {
+        .conteiner-formulario {
+            width: 500px;
+            .titulo-formulario {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        .conteiner-formulario {
+            width: 350px;
+            .formulario {
+                .input-formulario {
+                    padding: 20px 0px;
+                    input {
+                        width: 300px;
+                    }
+                    textarea {
+                        width: 300px;
+                    }
+                }
+                .botones-formulario {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                    button {
+                        width: 85%;
+                    }
+                }
+            }
+        }
+    }
+}
