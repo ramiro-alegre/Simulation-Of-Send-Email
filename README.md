@@ -1,5 +1,7 @@
 # Email-simulation
  Simulation of sending an email with an email, subject and message with its validations
+ 
+ Watch in : https://clever-curran-3f3549.netlify.app/ 
 
 ![Imagen1](https://user-images.githubusercontent.com/64865940/129256077-da5872aa-b9ce-4841-b026-f38309c5600c.png)
 ![Imagen2](https://user-images.githubusercontent.com/64865940/129256113-0a6e33dc-49f3-4c4c-9849-9f7c04143248.png)
